@@ -11,3 +11,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-color: #1ba7df;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  margin: 5rem auto;
+  padding: 1rem;
+}
+.content h1 {
+  text-align: center;
+  font-size: 13rem;
+}
+.ButtonBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+}
+.ButtonBox button {
+  padding: .7rem 1rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  transition: transform .3s ease-in-out;
+  border-radius: .2rem;
+}
+.ButtonBox button:hover {
+  box-shadow: .1rem .1rem 1rem rgba(0,0,0,.3);
+  transform: scale(1.2);
+}
+.ButtonBox button:nth-child(1){
+  border: 1px solid #41de15;
+  color: #41de15;
+}
+.ButtonBox button:nth-child(2){
+  border: 1px solid #1544de;
+  color: #1544de;
+}
+.ButtonBox button:nth-child(3){
+  border: 1px solid #de1515;
+  color: #de1515;
+}
+.ButtonBox button:nth-child(4){
+  border: 1px solid #de159b;
+  color: #de159b;
+}
